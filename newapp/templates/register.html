@@ -1,0 +1,26 @@
+<html lang="en">
+  <head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>REGISTRATION</title>
+  </head>
+  <body style="font-family: Arial, sans-serif; background-color: #f4f4f4; display: flex; justify-content: center; align-items: center; height: 100vh; margin: 0;">
+    <form action="" method="POST" style="background-color: #fff; padding: 40px; border-radius: 15px; box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1); max-width: 400px; width: 100%;">
+      {% csrf_token %}
+
+      <h2 style="text-align: center; margin-bottom: 30px; color: #333;">Register</h2>
+
+      <label for="name" style="font-size: 14px; font-weight: bold; color: #555; display: block; margin-bottom: 10px;">Name</label>
+      <input type="text" name="name" placeholder="Enter your name" style="width: 100%; padding: 12px 15px; margin-bottom: 20px; border: 1px solid #ddd; border-radius: 25px; box-sizing: border-box; background-color: #f9f9f9; transition: all 0.3s;">
+      
+      <label for="email" style="font-size: 14px; font-weight: bold; color: #555; display: block; margin-bottom: 10px;">Email</label>
+      <input type="email" name="email" placeholder="Enter your email" style="width: 100%; padding: 12px 15px; margin-bottom: 20px; border: 1px solid #ddd; border-radius: 25px; box-sizing: border-box; background-color: #f9f9f9; transition: all 0.3s;">
+
+      <label for="mobile" style="font-size: 14px; font-weight: bold; color: #555; display: block; margin-bottom: 10px;">Mobile</label>
+      <input type="text" name="number" placeholder="Enter your mobile number" style="width: 100%; padding: 12px 15px; margin-bottom: 30px; border: 1px solid #ddd; border-radius: 25px; box-sizing: border-box; background-color: #f9f9f9; transition: all 0.3s;">
+
+      <input type="submit" value="Submit" style="width: 100%; padding: 12px 15px; background-color: #4CAF50; color: white; border: none; border-radius: 25px; font-size: 16px; font-weight: bold; cursor: pointer; transition: background-color 0.3s;">
+    </form>
+  </body>
+</html>

@@ -1,0 +1,23 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>EDIT PAGE</title>
+</head>
+<body>
+<form action='' method='POST'>
+    {% csrf_token %}
+
+    {% for x in data %}
+    
+    <input type='text' name='name' value='{{x.name}}'><br> 
+    <input type='email' name='email' value='{{x.email}}'><br>
+    <input type='number' name='number' value='{{x.number}}'><br>
+    <input type='number' name='sid' value='{{x.id}}'><br>
+    <input type='submit'>
+
+    {% endfor %}
+
+</body>
+</html>
